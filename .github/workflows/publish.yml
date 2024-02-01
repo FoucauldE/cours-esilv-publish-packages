@@ -17,7 +17,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/FoucauldE/publish-packages/game:${{ github.run_number }}
+          images: ghcr.io/FoucauldE/cours-esilv-publish-packages/game:${{ github.run_number }}
           tags: type=sha
       - name: Login to GHCR
         uses: docker/login-action@v3
